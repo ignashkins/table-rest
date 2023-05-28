@@ -5,9 +5,10 @@ endif
 
 
 bootstrap:
+	docker stop dbsql
 	docker run -d --rm -p 3306:3306 --name dbsql -it harianto/mysql
-
-up:
+	sleep 3
+	docker exec -it dbsql sh -c 'mysql -h 127.0.0.1 -u root -e "create database test;"'
 	sudo php -S localhost:80
 
 migrate:
