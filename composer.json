@@ -7,6 +7,14 @@
         }
     ],
     "require": {
-        "gabordemooij/redbean": "^5.7"
+        "symfony/var-dumper": "^6.2",
+        "guzzlehttp/guzzle": "^7.7",
+        "fakerphp/faker": "^1.22",
+        "illuminate/database": "^10.12"
+    },
+    "autoload": {
+        "classmap": [
+            "classes"
+        ]
     }
 }
