@@ -1,0 +1,12 @@
+{
+    "name": "ignashkins/table-rest",
+    "authors": [
+        {
+            "name": "Dmitriy Ignashkin",
+            "email": "ignashkins@yandex.ru"
+        }
+    ],
+    "require": {
+        "gabordemooij/redbean": "^5.7"
+    }
+}
